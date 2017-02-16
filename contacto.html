@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Formulario de contacto</h1>
+    </header>
+
+    <main>
+        <form action="index.html" method="POST">
+            <label>Nombre:</label>
+            <input type="text" name="txtnombre" placeholder="Nombre:" required title="Campo requerido" />
+            <br>
+            <label>Apellido Materno:</label>
+            <input type="text" placeholder="Apellido Materno" />
+            <br>
+            <label>Apellido Paterno:</label>
+            <input type="text" placeholder="Apellido Paterno" />
+            <br>
+            <label>Correo:</label>
+            <input type="email" placeholder="Correo" pattern="[Aa-Zz0-9]@[Aa-Zz0-9].[Aa-Zz][3]" />
+            <br>
+            <label>Sexo:</label>
+            <br> H:
+            <input type="radio" name="rbsexo" checked value="H" /> F:
+            <input type="radio" name="rbsexo" value="F" />
+            <label>Fecha nacimiento:</label>
+            <input type="date" placeholder="Fecha nacimiento" required/>
+            <br>
+            <label>Pasatiempos</label>
+            <br> Leer Novelas de accion<input type="checkbox" name="chkbopciones" checked/></br>
+            <br> cinefilo <input type="checkbox" name="chkbopciones" checked/></br>
+            <br> Natacion <input type="checkbox" name="chkbopciones" checked/></br>
+            <br> Video juegos<input type="checkbox" name="chkbopciones" checked/></br>
+            <br> Escuchar musica<input type="checkbox" name="chkbopciones" checked/></br>
+
+            <label>Foto</label>
+            <input type="file" value="Subir Foto" />
+
+            <label>Buscar informacion</label>
+            <input type="search" />
+            <label>Color</label>
+            <input type="color" />
+            <input type="button" value="Ok" />
+            <input type="submit" value="Enviar Informacion" />
+
+        </form>
+    </main>
+
+    <footer>
+        &copy Derechos de autor reservados
+    </footer>
+
+</body>
+
+</html>
